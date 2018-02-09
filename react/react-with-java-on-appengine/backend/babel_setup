@@ -1,0 +1,3 @@
+# install babel
+#npm install --global babel-cli
+npm install babel-preset-react

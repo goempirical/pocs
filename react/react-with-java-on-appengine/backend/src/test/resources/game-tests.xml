@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ServiceTests" parallel="methods" thread-count="8" verbose="1">
+  <test name="User tests" >
+    <classes>
+       <class name="com.m2i.app.test.UserTests" />
+    </classes>
+  </test>
+</suite>

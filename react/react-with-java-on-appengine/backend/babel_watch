@@ -1,0 +1,2 @@
+# babel watch
+babel --presets react src/main/webapp/app/src --watch --out-dir src/main/webapp/app/build
