@@ -6,37 +6,43 @@
 
 video { 
   transition: all 500ms;
-  animation: slideback 800ms 1 ease-in forwards;
+  animation: slideback 1500ms 1 ease-in forwards;
 }
 
 .slideaway {
-		animation: slideaway 800ms 1 ease-out forwards;
+		animation: slideaway 1500ms 1 ease-out forwards;
 }
 
 @keyframes slideaway {
   0% {
     transform:translateX(0) scale(1);
+    animation-timing-function: ease-in;
   }
   
   50% {
-    transform:translateX(-40%) scale(.85) rotateY(-5deg);
+    transform:translateX(-40%) scale(.85) rotateY(-3deg);
+    animation-timing-function: linear;
   }
 
   100% {
     transform:translateX(-80%) scale(.7) rotateY(0deg);
+    animation-timing-function: ease-out;
   }
 }
 
 @keyframes slideback {
   0% {
     transform:translateX(-80%) scale(.7) rotateY(0deg);
+    animation-timing-function: ease-in;
   }
   
   50% {
-    transform:translateX(-40%) scale(.85) rotateY(-5deg);
+    transform:translateX(-40%) scale(.85) rotateY(-3deg);
+    animation-timing-function: linear;
   }
 
   100% {
     transform:translateX(0) scale(1);
+    animation-timing-function: ease-out;
   }
 }
