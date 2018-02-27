@@ -4,12 +4,14 @@
 
 <div style="text-align:center">
   <button onclick="playPause()">Play/Pause</button>
-  <button onclick="seek()">Jump 10</button>
-  <button onclick="makeBig()">Big</button>
+  <button onclick="seek()">Jump 10s</button>
   <button onclick="makeSmall()">Small</button>
   <button onclick="makeNormal()">Normal</button>
+  <button onclick="makeBig()">Big</button>
   <br><br>
   <div id="current_time" style="margin-bottom:10px">00:00</div>
+  <progress id="progress_bar" value="0" max="100"></progress>
+  <br><br>
   <video id="video1" width="420">
     <source src="https://player.vimeo.com/external/220371268.hd.mp4?s=f65aa374063fda80205f9ba05fd6252a2249e950&profile_id=119" type="video/mp4">
     Your browser does not support HTML5 video.
@@ -30,7 +32,7 @@ function playPause() {
 }
 
 function makeBig() {
-  myVideo.width = 560;
+  myVideo.width = 800;
 }
 
 function makeSmall() {
@@ -38,14 +40,15 @@ function makeSmall() {
 }
 
 function makeNormal() {
-  myVideo.width = 420;
+  myVideo.width = 600;
 }
 
 myVideo.ontimeupdate = function() {
-  console.log(myVideo.currentTime);
-  document.querySelector('#current_time').innerHTML = toHHMMSS(
-    myVideo.currentTime
-  );
+  const currentTime = document.querySelector('#current_time');
+  currentTime.innerHTML = toHHMMSS(myVideo.currentTime);
+  const progressBar = document.querySelector('#progress_bar');
+  console.log(myVideo.duration + ' ' + myVideo.currentTime);
+  progressBar.value = myVideo.currentTime * 100 / myVideo.duration;
 };
 
 var toHHMMSS = secs => {
