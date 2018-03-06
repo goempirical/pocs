@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <link rel='stylesheet' href='css/style.css?ver=20180227' type='text/css' media='all' />
+</head>
 <body>
 
-<div style="text-align:center">
+<div class="container">
   <button onclick="playPause()">Play/Pause</button>
   <button onclick="seek()">Jump 10s</button>
   <button onclick="makeSmall()">Small</button>
   <button onclick="makeNormal()">Normal</button>
+  <button onclick="slideAway()">Slide Away</button>
   <button onclick="makeBig()">Big</button>
   <br><br>
   <div id="current_time" style="margin-bottom:10px">00:00</div>
@@ -32,15 +36,30 @@ function playPause() {
 }
 
 function makeBig() {
+  myVideo.play()
   myVideo.width = 800;
+  slideBack();
 }
 
 function makeSmall() {
+  myVideo.play()
   myVideo.width = 320;
+  slideBack();
 }
 
 function makeNormal() {
+  myVideo.play()
   myVideo.width = 600;
+  slideBack();
+}
+
+function slideAway() {
+  myVideo.pause()
+  myVideo.classList.add('slideaway');
+}
+
+function slideBack() {
+  myVideo.classList.remove('slideaway');
 }
 
 myVideo.ontimeupdate = function() {
