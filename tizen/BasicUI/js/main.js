@@ -1,34 +1,27 @@
 
-window.onload = function () {
+window.onload = async function () {
     // TODO:: Do your initialization job
 
     // add eventListener for tizenhwkey
     document.addEventListener('tizenhwkey', function(e) {
         if(e.keyName == "back")
-	try {
-	    tizen.application.getCurrentApplication().exit();
-	} catch (ignore) {
-	}
+		try {
+		    tizen.application.getCurrentApplication().exit();
+		} catch (ignore) {
+		}
     });
 
     // Sample code
     var textbox = document.querySelector('.contents');
     textbox.addEventListener("click", function(){
     	box = document.querySelector('#textbox');
-    	box.innerHTML = box.innerHTML == "Whoooo" ? "Sample" : "Basic Amazing!!";
+    	box.innerHTML = box.innerHTML == "Basic" ? "Sample" : "Basic";
     });
     
-    goForIt();
-    sendRequest();
+    let firstName = await api.getFirstName();
+    console.log("This is : " + firstName );
     
 };
-
-async function sendRequest(){
-	console.log("here we go");
-	let response = await fetch('http://jsonplaceholder.typicode.com/users');
-	let myJson = await response.json();
-	console.log("and then: " + myJson[0].name);
-}
 
 
 function goForIt(){
@@ -39,7 +32,7 @@ function goForIt(){
     
     client.onreadystatechange = function(e) {
         if (client.readyState == 4 && client.status == 200) {
-            alert(JSON.stringify(e.data));
+            console.log("Not sure how we can read from here: " + JSON.stringify(e.responseXML));
         }
     };
 

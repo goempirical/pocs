@@ -6,10 +6,6 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM=</DigestValue>
 </Reference>
-<Reference URI=".babelrc">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>l8p9cDuOIUKY20vff4tvZ56yU4Pclj/F9DxUmusZHCw=</DigestValue>
-</Reference>
 <Reference URI="README.md">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>1JOEjnetZB0cZm/4diz18FBkhXghOvG4bQc6Ku6KE3o=</DigestValue>
@@ -32,19 +28,27 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>t1LDD19x0vOwWNKEmYYCG4Dq/h1cIekHISpTpedoohI=</DigestValue>
+<DigestValue>7uRcfzg29bymaOFDKzWNOeQ5SspUZkXLs1Wzb2db9QM=</DigestValue>
+</Reference>
+<Reference URI="js%2F.DS_Store">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM=</DigestValue>
+</Reference>
+<Reference URI="js%2Fapi.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>HM0+QXRISWOqYrSrc5shxtK2X5W3YvaqWA+4MmeNhkM=</DigestValue>
 </Reference>
 <Reference URI="js%2Fmain.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>ORSj/gRVtyub+NRug5z7kOfi9cu6c6MJ7E09JUM0S8s=</DigestValue>
-</Reference>
-<Reference URI="js%2Fmain_backup.js">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>kJirZPZ/1CVGHK55qG6v+Mu3XHK2YNJ8TNe8KM7Iusk=</DigestValue>
+<DigestValue>l8TjaSlHdIBewSMl1BqEyt8rnNtOwSpt11J8QWDJqdg=</DigestValue>
 </Reference>
 <Reference URI="results.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>DbQJcojeeSNfP8Lgww0I3GwWGdKvaKSNa0ZjmR5pkSc=</DigestValue>
+</Reference>
+<Reference URI="tizen%2F.project">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>ZybCzh1VzavqqtgPnn4VmMnBNheBdO4I61zRRaW8OZg=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -55,9 +59,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-OzYhtUSWf5DrR1VLciqaErznplz2eTmT8HBf/xuNK4mICOIr6jXVE/y5ZJdgaWYdi207GK6Fpy83
-LEJNGPvF1MZqvqwWUM4pgXljzMAPIK9mijSm3ifoR10YapBYcaHvgnEjISVINytOGmk3P+pNqzBn
-Py50BfywKFmXpF+DOrk=
+ex8/TEroKf1hSKV/uiTIgUd4JOW9u/zPhZyvwWAJCSFf2eqfnGenth7WkyqksxsFMVdCl+Gof3Qh
+Y+B6AGyWdty0TCsY7dicuri8LlN8Nsp/AYPB4zcc6upmhgNIAWX7kh43ZWMMgae+ULSE/Z9Ouhw0
+GxNtPO2gIqzYe1g1GO8=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

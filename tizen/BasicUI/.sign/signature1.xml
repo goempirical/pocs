@@ -6,17 +6,13 @@
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM=</DigestValue>
 </Reference>
-<Reference URI=".babelrc">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>l8p9cDuOIUKY20vff4tvZ56yU4Pclj/F9DxUmusZHCw=</DigestValue>
-</Reference>
 <Reference URI="README.md">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>1JOEjnetZB0cZm/4diz18FBkhXghOvG4bQc6Ku6KE3o=</DigestValue>
 </Reference>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>LVrPi+O+Wr5KaiAxxCBJ7qFwmQfogSu3nqHfZU0yeQM=</DigestValue>
+<DigestValue>fEn+Ulnt5AZl0DD++OD0IhK69ahrZr1pkB5QpViQUdk=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -36,19 +32,27 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>t1LDD19x0vOwWNKEmYYCG4Dq/h1cIekHISpTpedoohI=</DigestValue>
+<DigestValue>7uRcfzg29bymaOFDKzWNOeQ5SspUZkXLs1Wzb2db9QM=</DigestValue>
+</Reference>
+<Reference URI="js%2F.DS_Store">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM=</DigestValue>
+</Reference>
+<Reference URI="js%2Fapi.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>HM0+QXRISWOqYrSrc5shxtK2X5W3YvaqWA+4MmeNhkM=</DigestValue>
 </Reference>
 <Reference URI="js%2Fmain.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>ORSj/gRVtyub+NRug5z7kOfi9cu6c6MJ7E09JUM0S8s=</DigestValue>
-</Reference>
-<Reference URI="js%2Fmain_backup.js">
-<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>kJirZPZ/1CVGHK55qG6v+Mu3XHK2YNJ8TNe8KM7Iusk=</DigestValue>
+<DigestValue>l8TjaSlHdIBewSMl1BqEyt8rnNtOwSpt11J8QWDJqdg=</DigestValue>
 </Reference>
 <Reference URI="results.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>DbQJcojeeSNfP8Lgww0I3GwWGdKvaKSNa0ZjmR5pkSc=</DigestValue>
+</Reference>
+<Reference URI="tizen%2F.project">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>ZybCzh1VzavqqtgPnn4VmMnBNheBdO4I61zRRaW8OZg=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -59,9 +63,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-flRMlCNxaANA55hni+9AjeOrQPzgBfMmZ2vT+B7hnWwht/+sgf3qmAivBk5BnQnEEIHhXIZ8ZED3
-cw18jSY7MVFWkferx2Ve36zkRk5mjtCtIdeF5Rv406zPxrShOWTwUPpb09Ksy9/HBIOmhOzigKY7
-aPgfbmUZf383fNnFU9w=
+irdPuBQiZzGHbKT3l8VRTKA0EDCLbWqDkIEey2XybmNpkaPjpyAuaSc4CBrnudP/YG4s0pICby0P
+M8RrICZHaTkvH/5J3HOpK8S1LIn7v7eGq5DpqDiyRI6tpcC/UtFl4hLeO9kVQkoJAdWtGU59cxSn
+RadaQZj4OiT3F7+rnPg=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
