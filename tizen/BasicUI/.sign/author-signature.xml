@@ -36,11 +36,15 @@
 </Reference>
 <Reference URI="js%2Fapi.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>HM0+QXRISWOqYrSrc5shxtK2X5W3YvaqWA+4MmeNhkM=</DigestValue>
+<DigestValue>YDk/MscS2e91E7LewzsItty0H3hi0l8jWx4agnGFUA0=</DigestValue>
 </Reference>
 <Reference URI="js%2Fmain.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>l8TjaSlHdIBewSMl1BqEyt8rnNtOwSpt11J8QWDJqdg=</DigestValue>
+<DigestValue>2oTkUErkhh+pMl9GIn5chZiQGV91Q7cIzmr69jkqIpo=</DigestValue>
+</Reference>
+<Reference URI="package.json">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>ygIanhzDFiL9pevv5nPb1pvlw/+AP6tBhYvcdHi8gGY=</DigestValue>
 </Reference>
 <Reference URI="results.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -59,9 +63,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-ex8/TEroKf1hSKV/uiTIgUd4JOW9u/zPhZyvwWAJCSFf2eqfnGenth7WkyqksxsFMVdCl+Gof3Qh
-Y+B6AGyWdty0TCsY7dicuri8LlN8Nsp/AYPB4zcc6upmhgNIAWX7kh43ZWMMgae+ULSE/Z9Ouhw0
-GxNtPO2gIqzYe1g1GO8=
+dWkJegq9RIaS9p1KSLhy3VqC6lfodgAJJ8oQJYWGyO+B0slfc+/APqqnpEAUg6s8h7eXJodRUhsn
+//zvH4VM+czItAwq8b6TZvbfFjxjGG+psrD5VXzKeQ1hY6lw7jegUfTR08BQrX3htGcQOLJu+1qi
+lzaYafD/p9m1qWO1VS8=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

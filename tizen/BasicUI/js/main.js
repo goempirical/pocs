@@ -22,21 +22,3 @@ window.onload = async function () {
     console.log("This is : " + firstName );
     
 };
-
-
-function goForIt(){
-	var html = "";
-	
-	// create new XHR instance through the constructor
-    var client = new XMLHttpRequest();
-    
-    client.onreadystatechange = function(e) {
-        if (client.readyState == 4 && client.status == 200) {
-            console.log("Not sure how we can read from here: " + JSON.stringify(e.responseXML));
-        }
-    };
-
-    // specify the http request method and the request URLs path
-    client.open("GET", "https://jsonplaceholder.typicode.com/users");
-    client.send();
-}
