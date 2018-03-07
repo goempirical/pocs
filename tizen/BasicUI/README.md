@@ -1,12 +1,9 @@
-# react-component-injection-test
-Testing how we can inject react components in simple html pages
+# Tizen with Webpack
 
-See demo here: [Demo](https://www.goempirical.com/pocs/react/inject-components-into-html/dist/)
-Back to code: [Demo](https://github.com/goempirical/pocs)
+This project setup has multiple benefits
 
-
-Starting a simple server so we can test the react component
-python -m SimpleHTTPServer 8000
-
-//Generate the bundled js
-npm run build
+* we can use imports because we are bundling all the scripts together
+* we can use async/await
+* we can compile and then deploy to tizen(npm run build)
+* we can run the app in the dev server on chrome (npm run start|restart)
+* then we can open the tizen folder in the tizen Editor to validate

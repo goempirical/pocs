@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.js',
@@ -8,6 +7,6 @@ module.exports = {
   },
   output: {
     filename: 'js/bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'tizen/dist')
   }
 };

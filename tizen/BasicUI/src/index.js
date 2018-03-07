@@ -15,7 +15,7 @@ window.onload = async function() {
   var textbox = document.querySelector('.contents');
   textbox.addEventListener('click', function() {
     var box = document.querySelector('#textbox');
-    alert(box);
+    console.log(box);
     box.innerHTML = box.innerHTML == 'Basic' ? 'Sample' : 'Basic';
   });
 
