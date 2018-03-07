@@ -16,7 +16,7 @@
 </Reference>
 <Reference URI="dist%2Fjs%2Fbundle.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>ieGwxYei25iUGAVfjoD5dOEDsPPDuSPhRqPfoI65zqU=</DigestValue>
+<DigestValue>SSr90EbzH2JL5srzVTzh4YoX4waxODnwhqJOnJmqg80=</DigestValue>
 </Reference>
 <Reference URI="icon.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -31,9 +31,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-DN0h4/kzbKRe+5pHJNQaJI3Vf6j193gompcLJ1chYxy7IVcGmm7QANi3n0RS0aVyluABmF111Ulz
-keiKNGgmZFFWwJpqt3/dPCyA5XhnBHgJsUsHf24uTgsu2v3yRzw66ZYKufU32YdHNsy8eXe6hgHg
-K/TOJro7nv8+GDQjeoM=
+OoE4mqrhVYMobNAbOwG4T9VwvBGwWjxJATTyT/BytK6iupDe5k+9kVKmi3usB20rsw9uoyzJX5Lb
+UuDBvV7k7c9CguzAIw7ldJj7EiKuGRh0susbTWGwZYs6/nyoykeeBK5fRjmrkT+jWHge6uLdiErJ
+8U2OSdfDUyOAunCzujI=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
