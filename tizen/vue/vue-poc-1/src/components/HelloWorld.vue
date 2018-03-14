@@ -75,7 +75,10 @@
         <a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a>
       </li>
       <li>
+        <input v-model="inputMessage" type="text"/>
         <router-link to="Clips">Click Here</router-link>
+        <button v-on:click="goToClips">Greet</button>
+        <button v-on:click="showMessage()">Show Message</button>
       </li>
     </ul>
   </div>
@@ -86,12 +89,18 @@ export default {
   name: 'HelloWorld',
   data() {
     return {
+      inputMessage: "",
       msg: 'Welcome to my first Vue.js App'
     }
+  },
+  methods: {
+    goToClips() {
+      this.$router.push('clips');
+    },
+    showMessage(msg){
+      alert(this.inputMessage);
+    }
   }
-  // goToClips(){
-  //   this.$router.push("clips")
-  // }
 }
 </script>
 

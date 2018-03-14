@@ -2,29 +2,33 @@
 <SignedInfo>
 <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></CanonicalizationMethod>
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+<Reference URI="BasicUI.wgt">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>PBZOUNoUHoeImfEGI1TMufr7DQ4ujMKdD9bqnDeLijg=</DigestValue>
+</Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
 <DigestValue>xFRflKEdN1rcHX/odRRdnlgr/MMLYSkSAGrzXd6snec=</DigestValue>
 </Reference>
 <Reference URI="dist%2Findex.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>fCoT6S091jWMqU4sWvV1aSGrMG0H3bCLnbsILB4YVcE=</DigestValue>
+<DigestValue>YPqoF7d+LoloSQyQFpgI3fDjybaiz8s7ulqo6+cjzVg=</DigestValue>
 </Reference>
-<Reference URI="dist%2Fstatic%2Fcss%2Fapp.bbff70fcfe3adaaa3074f1a0102a8081.css">
+<Reference URI="dist%2Fstatic%2Fcss%2Fapp.f570b462c4920c2c5b8daa37c02322fc.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>tF8Jfy6b954L40f6oL4K/XKAoya+HJcIbCkfU8w+6mQ=</DigestValue>
+<DigestValue>rhEVpI3suI5bETVOT3w4a6D8475XupkUBy6ajSRN324=</DigestValue>
 </Reference>
-<Reference URI="dist%2Fstatic%2Fcss%2Fapp.bbff70fcfe3adaaa3074f1a0102a8081.css.map">
+<Reference URI="dist%2Fstatic%2Fcss%2Fapp.f570b462c4920c2c5b8daa37c02322fc.css.map">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>2VZDnxle1F22ZY/BSTGL7JwSFuXFlRmrOIpt/MtsBdE=</DigestValue>
+<DigestValue>eIyDitdYDIpamg/mnAubaAMxmb+1xl5ZRZJeM2xedSo=</DigestValue>
 </Reference>
-<Reference URI="dist%2Fstatic%2Fjs%2Fapp.2429a01aa0c7eba62d47.js">
+<Reference URI="dist%2Fstatic%2Fjs%2Fapp.7e39ee99f5e986cf5b43.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>QmksWrgv/rHlklPPOD/rmxw/OkCunwNBir6sXIw+k0Q=</DigestValue>
+<DigestValue>jonYt2GFBXtycVLoeqP7FwSBz0fXf6HXGlh/hFK/SqU=</DigestValue>
 </Reference>
-<Reference URI="dist%2Fstatic%2Fjs%2Fapp.2429a01aa0c7eba62d47.js.map">
+<Reference URI="dist%2Fstatic%2Fjs%2Fapp.7e39ee99f5e986cf5b43.js.map">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>Anq+c+7FTwZ5d+TcW8ZCX5hFHq0MsyI5vudkLIPAkP8=</DigestValue>
+<DigestValue>brv7CDFg3cZBVxjPt6xGmUDLmHLSYQ7AiIpRTwPh6JM=</DigestValue>
 </Reference>
 <Reference URI="dist%2Fstatic%2Fjs%2Fmanifest.3ad1d5771e9b13dbdad2.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -32,7 +36,7 @@
 </Reference>
 <Reference URI="dist%2Fstatic%2Fjs%2Fmanifest.3ad1d5771e9b13dbdad2.js.map">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>1W5KNVnkS9My9zwF0mwTCNTQRBTmaAnJpGHqB2EMQ8Q=</DigestValue>
+<DigestValue>lJrO/BkbnCMRPXwaJTlZfDi/In3hXPWDy01czuHyRbs=</DigestValue>
 </Reference>
 <Reference URI="dist%2Fstatic%2Fjs%2Fvendor.1748317793fd05195ff8.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -55,9 +59,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-IP0ygs+wrOMukatOoJ93620RAQbsBrjul/sVwvpZZlTFwqhX4DLjLogHElcnO7sAdJzxiOpNBycl
-kPgQ3ilVws0AruxgP6PiT+4z6gLynHsq5ut2oFtY6KPBXCykW1bIPVdEsmP/7nH+5uATx8pZfHUf
-FIlJ4kbBI9WQpnOqR50=
+U1lO6v+PmQA9gmDFQurjJIidkEjz5RLjJmG8gFTvqA6dYcaXI1Oj5fR12zV03Z24VveGUeKSH1ao
+uyokfLkv82joR9vAmtMvNCoZExagZrMzr6cPPba+7RtaS/cckvoa1Y8bAR3IbJt9VTRHUUAtISqW
+SG6/H2H0CIuxS5e7bLI=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
