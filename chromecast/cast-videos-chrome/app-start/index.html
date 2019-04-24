@@ -19,9 +19,9 @@
 <head>
 <title>Cast Videos: Google Cast Chrome Sender SDK Demo App</title>
 <link rel="icon" type="image/x-icon" href="imagefiles/favicon.ico" />
-<link rel="icon" type="image/png" href="imagefiles/favicon-16x16.png" />
-<link rel="icon" type="image/png" href="imagefiles/favicon-32x32.png" />
-<link rel="icon" type="image/png" href="imagefiles/favicon-64x64.png" />
+<link rel="icon" type="image/png" href="imagefiles/favicon_16x16.png" />
+<link rel="icon" type="image/png" href="imagefiles/favicon_32x32.png" />
+<link rel="icon" type="image/png" href="imagefiles/favicon_64x64.png" />
 <link rel="stylesheet" type="text/css" href="css/CastVideos.css">
 <link href='//fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic-ext,greek-ext,latin-ext' rel='stylesheet' type='text/css'>
 </head>
@@ -47,7 +47,6 @@
            <div id="progress_indicator"></div>
            <div id="fullscreen_expand"></div>
            <div id="fullscreen_collapse"></div>
-           <google-cast-launcher id="castbutton"></google-cast-launcher>
            <div id="audio_bg"></div>
            <div id="audio_bg_track"></div>
            <div id="audio_indicator"></div>
@@ -78,12 +77,6 @@
       <script src="CastVideos.js"></script>
       <script type="text/javascript">
         var castPlayer = new CastPlayer();
-        window['__onGCastApiAvailable'] = function(isAvailable) {
-            if (isAvailable) {
-                castPlayer.initializeCastPlayer();
-            }
-        };
       </script>
-      <script type="text/javascript" src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1"></script>
 </body>
 </html>
