@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Flatkit - HTML Version | Bootstrap 4 Web App Kit with AngularJS</title>
+  <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+  <link rel="apple-touch-icon" href="../assets/images/logo.png">
+  <meta name="apple-mobile-web-app-title" content="Flatkit">
+  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.png">
+  
+  <!-- style -->
+  <link rel="stylesheet" href="../assets/animate.css/animate.min.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/glyphicons/glyphicons.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/material-design-icons/material-design-icons.css" type="text/css" />
+
+  <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <!-- build:css ../assets/styles/app.min.css -->
+  <link rel="stylesheet" href="../assets/styles/app.css" type="text/css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="../assets/styles/font.css" type="text/css" />
+</head>
+<body>
+  <div class="app" id="app">
+
+<!-- ############ LAYOUT START-->
+
+  <!-- aside -->
+  <div id="aside" class="app-aside modal fade nav-dropdown" ng-class="{'folded': app.setting.folded}">
+  	<!-- fluid app aside -->
+    <div class="left navside dark dk" layout="column">
+  	  <div class="navbar no-radius">
+        <div ui-include="'../views/blocks/navbar.brand.html'"></div>
+      </div>
+      <div flex class="hide-scroll">
+          <nav class="scroll nav-light">
+            <div ui-include="'../views/blocks/nav.html'"></div>
+          </nav>
+      </div>
+      <div flex-no-shrink class="b-t">
+        <div ui-include="'../views/blocks/aside.top.0.html'"></div>
+      </div>
+    </div>
+  </div>
+  <!-- / -->
+  
+  <!-- content -->
+  <div id="content" class="app-content box-shadow-z0" role="main">
+    <div class="app-header white box-shadow">
+        <div ui-include="'../views/blocks/header.html'"></div>
+    </div>
+    <div class="app-footer" ng-class="{'hide': $state.current.data.hideFooter}">
+      <div ui-include="'../views/blocks/footer.html'"></div>
+    </div>
+    <div ui-view class="app-body" id="view">
+
+<!-- ############ PAGE START-->
+<div class="padding">
+  <h6>Stacked-to-horizontal</h6>
+  <div class="row">
+    <div class="col-md-2"><div class="box p-a">.col-md-2</div></div>
+    <div class="col-md-2"><div class="box p-a">.col-md-2</div></div>
+    <div class="col-md-2"><div class="box p-a">.col-md-2</div></div>
+    <div class="col-md-2"><div class="box p-a">.col-md-2</div></div>
+    <div class="col-md-2"><div class="box p-a">.col-md-2</div></div>
+    <div class="col-md-2"><div class="box p-a">.col-md-2</div></div>
+  </div>
+  <div class="row">
+    <div class="col-md-8"><div class="box p-a">.col-md-8</div></div>
+    <div class="col-md-4"><div class="box p-a">.col-md-4</div></div>
+  </div>
+  <div class="row">
+    <div class="col-md-4"><div class="box p-a">.col-md-4</div></div>
+    <div class="col-md-4"><div class="box p-a">.col-md-4</div></div>
+    <div class="col-md-4"><div class="box p-a">.col-md-4</div></div>
+  </div>
+  <div class="row">
+    <div class="col-md-6"><div class="box p-a">.col-md-6</div></div>
+    <div class="col-md-6"><div class="box p-a">.col-md-6</div></div>
+  </div>
+  <h6>Mobile and desktop</h6>
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-xs-12 col-md-8"><div class="box p-a">.col-xs-12 .col-md-8</div></div>
+    <div class="col-xs-6 col-md-4"><div class="box p-a">.col-xs-6 .col-md-4</div></div>
+  </div>
+
+  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+  <div class="row">
+    <div class="col-xs-6 col-md-4"><div class="box p-a">.col-xs-6 .col-md-4</div></div>
+    <div class="col-xs-6 col-md-4"><div class="box p-a">.col-xs-6 .col-md-4</div></div>
+    <div class="col-xs-6 col-md-4"><div class="box p-a">.col-xs-6 .col-md-4</div></div>
+  </div>
+
+  <!-- Columns are always 50% wide, on mobile and desktop -->
+  <div class="row">
+    <div class="col-xs-6"><div class="box p-a">.col-xs-6</div></div>
+    <div class="col-xs-6"><div class="box p-a">.col-xs-6</div></div>
+  </div>
+
+  <h6>Mobile, tablet, desktops</h6>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-8"><div class="box p-a">.col-xs-12 .col-sm-6 .col-md-8</div></div>
+    <div class="col-xs-6 col-md-4"><div class="box p-a">.col-xs-6 .col-md-4</div></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-sm-4"><div class="box p-a">.col-xs-6 .col-sm-4</div></div>
+    <div class="col-xs-6 col-sm-4"><div class="box p-a">.col-xs-6 .col-sm-4</div></div>
+    <!-- Optional: clear the XS cols if their content doesn't match in height -->
+    <div class="clearfix visible-xs-block"></div>
+    <div class="col-xs-6 col-sm-4"><div class="box p-a">.col-xs-6 .col-sm-4</div></div>
+  </div>
+
+  <h6>Offsetting columns</h6>
+  <div class="row">
+    <div class="col-md-4"><div class="box p-a">.col-md-4</div></div>
+    <div class="col-md-4 col-md-offset-4"><div class="box p-a">.col-md-4 .col-md-offset-4</div></div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 col-md-offset-3"><div class="box p-a">.col-md-3 .col-md-offset-3</div></div>
+    <div class="col-md-3 col-md-offset-3"><div class="box p-a">.col-md-3 .col-md-offset-3</div></div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3"><div class="box p-a">.col-md-6 .col-md-offset-3</div></div>
+  </div>
+  
+  <h6>Column ordering</h6>
+  <div class="row">
+    <div class="col-md-9 col-md-push-3"><div class="box p-a">.col-md-9 .col-md-push-3</div></div>
+    <div class="col-md-3 col-md-pull-9"><div class="box p-a">.col-md-3 .col-md-pull-9</div></div>
+  </div>
+
+  <h6>Grid options</h6>
+  <p>See how aspects of the Bootstrap grid system work across multiple devices with a handy table.</p>
+  <div class="table-responsive box">
+    <table class="table table-striped white">
+      <thead>
+        <tr>
+          <th></th>
+          <th>
+            Extra small devices
+            <small>Phones (&lt;33.9em)</small>
+          </th>
+          <th>
+            Small devices
+            <small>Tablets (≥34em)</small>
+          </th>
+          <th>
+            Medium devices
+            <small>Desktops (≥48em)</small>
+          </th>
+          <th>
+            Large devices
+            <small>Desktops (≥62em)</small>
+          </th>
+          <th>
+            Extra large devices
+            <small>Desktops (≥75em)</small>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="text-nowrap">Grid behavior</th>
+          <td>Horizontal at all times</td>
+          <td colspan="4">Collapsed to start, horizontal above breakpoints</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap">Container width</th>
+          <td>34rem</td>
+          <td>45rem</td>
+          <td>60rem</td>
+          <td>72.25rem</td>
+          <td>72.25rem</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap">Class prefix</th>
+          <td><code>.col-xs-</code></td>
+          <td><code>.col-sm-</code></td>
+          <td><code>.col-md-</code></td>
+          <td><code>.col-lg-</code></td>
+          <td><code>.col-xl-</code></td>
+        </tr>
+        <tr>
+          <th class="text-nowrap"># of columns</th>
+          <td colspan="5">12</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap">Gutter width</th>
+          <td colspan="5">1.875rem</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap">Nestable</th>
+          <td colspan="5">Yes</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap">Offsets</th>
+          <td colspan="5">Yes</td>
+        </tr>
+        <tr>
+          <th class="text-nowrap">Column ordering</th>
+          <td colspan="5">Yes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ############ PAGE END-->
+
+    </div>
+  </div>
+  <!-- / -->
+
+  <!-- theme switcher -->
+  <div id="switcher">
+    <div ui-include="'../views/blocks/switcher.html'"></div>
+  </div>
+  <!-- / -->
+
+<!-- ############ LAYOUT END-->
+
+  </div>
+<!-- build:js scripts/app.html.js -->
+<!-- jQuery -->
+  <script src="../libs/jquery/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="../libs/jquery/tether/dist/js/tether.min.js"></script>
+  <script src="../libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+  <script src="../libs/jquery/underscore/underscore-min.js"></script>
+  <script src="../libs/jquery/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="../libs/jquery/PACE/pace.min.js"></script>
+
+  <script src="scripts/config.lazyload.js"></script>
+
+  <script src="scripts/palette.js"></script>
+  <script src="scripts/ui-load.js"></script>
+  <script src="scripts/ui-jp.js"></script>
+  <script src="scripts/ui-include.js"></script>
+  <script src="scripts/ui-device.js"></script>
+  <script src="scripts/ui-form.js"></script>
+  <script src="scripts/ui-nav.js"></script>
+  <script src="scripts/ui-screenfull.js"></script>
+  <script src="scripts/ui-scroll-to.js"></script>
+  <script src="scripts/ui-toggle-class.js"></script>
+
+  <script src="scripts/app.js"></script>
+
+  <!-- ajax -->
+  <script src="../libs/jquery/jquery-pjax/jquery.pjax.js"></script>
+  <script src="scripts/ajax.js"></script>
+<!-- endbuild -->
+</body>
+</html>

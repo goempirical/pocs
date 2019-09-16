@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Flatkit - HTML Version | Bootstrap 4 Web App Kit with AngularJS</title>
+  <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+  <link rel="apple-touch-icon" href="../assets/images/logo.png">
+  <meta name="apple-mobile-web-app-title" content="Flatkit">
+  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.png">
+  
+  <!-- style -->
+  <link rel="stylesheet" href="../assets/animate.css/animate.min.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/glyphicons/glyphicons.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="../assets/material-design-icons/material-design-icons.css" type="text/css" />
+
+  <link rel="stylesheet" href="../assets/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <!-- build:css ../assets/styles/app.min.css -->
+  <link rel="stylesheet" href="../assets/styles/app.css" type="text/css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="../assets/styles/font.css" type="text/css" />
+</head>
+<body>
+  <div class="app" id="app">
+
+<!-- ############ LAYOUT START-->
+
+  <!-- aside -->
+  <div id="aside" class="app-aside modal fade nav-dropdown" ng-class="{'folded': app.setting.folded}">
+  	<!-- fluid app aside -->
+    <div class="left navside dark dk" layout="column">
+  	  <div class="navbar no-radius">
+        <div ui-include="'../views/blocks/navbar.brand.html'"></div>
+      </div>
+      <div flex class="hide-scroll">
+          <nav class="scroll nav-light">
+            <div ui-include="'../views/blocks/nav.html'"></div>
+          </nav>
+      </div>
+      <div flex-no-shrink class="b-t">
+        <div ui-include="'../views/blocks/aside.top.0.html'"></div>
+      </div>
+    </div>
+  </div>
+  <!-- / -->
+  
+  <!-- content -->
+  <div id="content" class="app-content box-shadow-z0" role="main">
+    <div class="app-header white box-shadow">
+        <div ui-include="'../views/blocks/header.html'"></div>
+    </div>
+    <div class="app-footer" ng-class="{'hide': $state.current.data.hideFooter}">
+      <div ui-include="'../views/blocks/footer.html'"></div>
+    </div>
+    <div ui-view class="app-body" id="view">
+
+<!-- ############ PAGE START-->
+<div class="padding">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="box">
+        <div class="box-header">
+          <span class="label danger pull-right">6</span>
+          <h3>Tasks</h3>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Progress</th>
+              <th>Item</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="progress progress-sm m-y-0">
+                  <div class="progress-bar info" style="width: 45%"></div>
+                </div>
+              </td>
+              <td>App prototype design</td>
+            </tr>
+            <tr>                    
+              <td>
+                <div class="progress progress-sm m-y-0">
+                  <div class="progress-bar success" style="width: 25%"></div>
+                </div>
+              </td>
+              <td>Design documents</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="progress progress-sm m-y-0">
+                  <div class="progress-bar danger" style="width: 55%"></div>
+                </div>
+              </td>
+              <td>UI toolkit</td>
+            </tr>
+            <tr>                    
+              <td>
+                <div class="progress progress-sm m-y-xs">
+                  <div class="progress-bar warning" style="width: 15%"></div>
+                </div>
+              </td>
+              <td>Testing</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="box">
+        <div class="box-header">
+          <h3>Stats</h3>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="width:60px;" class="text-center">Graph</th>
+              <th>Item</th>                    
+              <th style="width:70px;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'bar', height:19, barWidth:4, barSpacing:2, barColor:'#0cc2aa'}" class="sparkline inline">loading...</div>
+              </td>
+              <td>App downloads</td>
+              <td class="text-success">
+                <i class="fa fa-level-up"></i> 40%
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 60,30,10 ], {type:'pie', height:19, sliceColors:['#fcc100','#fff','#0cc2aa']}" class="sparkline inline">loading...</div>
+              </td>
+              <td>Social connection</td>
+              <td class="text-success">
+                <i class="fa fa-level-up"></i> 20%
+              </td>
+            </tr>
+            <tr>                    
+              <td>
+                <div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'line', height:19, width:60, lineColor:'#0cc2aa', fillColor:'transparent'}" class="sparkline inline">loading...</div>
+              </td>
+              <td>Revenue</td>
+              <td class="text-warning">
+                <i class="fa fa-level-down"></i> 5%
+              </td>
+            </tr>
+            <tr>                    
+              <td>
+                <div ui-jp="sparkline" ui-refresh="app.setting.color" ui-options="[ 16,15,15,14,17,18,16,15,16 ], {type:'discrete', height:19, width:60, lineColor:'#6cc788'}" class="sparkline inline">loading...</div>
+              </td>
+              <td>Customer increase</td>
+              <td class="text-danger">
+                <i class="fa fa-level-down"></i> 20%
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-header">
+      <h3>Table with elements</h3>
+    </div>
+    <div class="row p-a">
+      <div class="col-sm-5">
+        <select class="input-sm form-control w-sm inline v-middle">
+          <option value="0">Bulk action</option>
+          <option value="1">Delete selected</option>
+          <option value="2">Bulk edit</option>
+          <option value="3">Export</option>
+        </select>
+        <button class="btn btn-sm white">Apply</button>                
+      </div>
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-3">
+        <div class="input-group input-group-sm">
+          <input type="text" class="form-control" placeholder="Search">
+          <span class="input-group-btn">
+            <button class="btn b-a white" type="button">Go!</button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-striped b-t">
+        <thead>
+          <tr>
+            <th style="width:20px;">
+              <label class="ui-check m-a-0">
+                <input type="checkbox"><i></i>
+              </label>
+            </th>
+            <th>Project</th>
+            <th>Task</th>
+            <th>Date</th>
+            <th style="width:50px;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><label class="ui-check m-a-0"><input type="checkbox" name="post[]"><i class="dark-white"></i></label></td>
+            <td>Idrawfast</td>
+            <td>4c</td>
+            <td>Jul 25, 2013</td>
+            <td>
+              <a href class="active" ui-toggle-class><i class="fa fa-check text-success none"></i><i class="fa fa-times text-danger inline"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="ui-check m-a-0"><input type="checkbox" name="post[]"><i class="dark-white"></i></label></td>
+            <td>Formasa</td>
+            <td>8c</td>
+            <td>Jul 22, 2013</td>
+            <td>
+              <a href ui-toggle-class><i class="fa fa-check text-success none"></i><i class="fa fa-times text-danger inline"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="ui-check m-a-0"><input type="checkbox" name="post[]"><i class="dark-white"></i></label></td>
+            <td>Avatar system</td>
+            <td>15c</td>
+            <td>Jul 15, 2013</td>
+            <td>
+              <a href class="active" ui-toggle-class><i class="fa fa-check text-success none"></i><i class="fa fa-times text-danger inline"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="ui-check m-a-0"><input type="checkbox" name="post[]"><i class="dark-white"></i></label></td>
+            <td>Throwdown</td>
+            <td>4c</td>
+            <td>Jul 11, 2013</td>
+            <td>
+              <a href class="active" ui-toggle-class><i class="fa fa-check text-success none"></i><i class="fa fa-times text-danger inline"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="ui-check m-a-0"><input type="checkbox" name="post[]"><i class="dark-white"></i></label></td>
+            <td>Idrawfast</td>
+            <td>4c</td>
+            <td>Jul 7, 2013</td>
+            <td>
+              <a href class="active" ui-toggle-class><i class="fa fa-check text-success none"></i><i class="fa fa-times text-danger inline"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="ui-check m-a-0"><input type="checkbox" name="post[]"><i class="dark-white"></i></label></td>
+            <td>Formasa</td>
+            <td>8c</td>
+            <td>Jul 3, 2013</td>
+            <td>
+              <a href class="active" ui-toggle-class><i class="fa fa-check text-success none"></i><i class="fa fa-times text-danger inline"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="ui-check m-a-0"><input type="checkbox" name="post[]"><i class="dark-white"></i></label></td>
+            <td>Avatar system</td>
+            <td>15c</td>
+            <td>Jul 2, 2013</td>
+            <td>
+              <a href class="active" ui-toggle-class><i class="fa fa-check text-success none"></i><i class="fa fa-times text-danger inline"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td><label class="ui-check m-a-0"><input type="checkbox" name="post[]"><i class="dark-white"></i></label></td>
+            <td>Videodown</td>
+            <td>4c</td>
+            <td>Jul 1, 2013</td>
+            <td>
+              <a href class="active" ui-toggle-class><i class="fa fa-check text-success none"></i><i class="fa fa-times text-danger inline"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer class="dker p-a">
+      <div class="row">
+        <div class="col-sm-4 hidden-xs">
+          <select class="input-sm form-control w-sm inline v-middle">
+            <option value="0">Bulk action</option>
+            <option value="1">Delete selected</option>
+            <option value="2">Bulk edit</option>
+            <option value="3">Export</option>
+          </select>
+          <button class="btn btn-sm white">Apply</button>                  
+        </div>
+        <div class="col-sm-4 text-center">
+          <small class="text-muted inline m-t-sm m-b-sm">showing 20-30 of 50 items</small>
+        </div>
+        <div class="col-sm-4 text-right text-center-xs">                
+          <ul class="pagination pagination-sm m-a-0">
+            <li><a href><i class="fa fa-chevron-left"></i></a></li>
+            <li class="active"><a href>1</a></li>
+            <li><a href>2</a></li>
+            <li><a href>3</a></li>
+            <li><a href>4</a></li>
+            <li><a href>5</a></li>
+            <li><a href><i class="fa fa-chevron-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="box">
+        <div class="box-header">
+          <h2>Basic</h2>
+          <small>Add the base class .table to any &lt;table>.</small>
+        </div>
+        <div class="box-divider m-a-0"></div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="box">
+        <div class="box-header">
+          <h2>Striped rows</h2>
+          <small>
+            Use .table-striped to add zebra-striping to any table row within the &lt;tbody>.
+          </small>
+        </div>
+        <table class="table table-striped b-t">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="box">
+        <div class="box-header">
+          <h2>Bordered table</h2>
+          <small>Add the class .table-bordered to any &lt;table>.</small>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@TwBootstrap</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="box">
+        <div class="box-header">
+          <h2>Table hover</h2>
+          <small>Add the class .table-hover to any &lt;table>.</small>
+        </div>
+        <table class="table table-hover b-t">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2">1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@TwBootstrap</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="box">
+    <div class="box-header">
+      <h2>Responsive table</h2>
+      <small>Wrap the table in a div with .table-responsive class</small>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-bordered m-a-0">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+            <th>Table heading</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ############ PAGE END-->
+
+    </div>
+  </div>
+  <!-- / -->
+
+  <!-- theme switcher -->
+  <div id="switcher">
+    <div ui-include="'../views/blocks/switcher.html'"></div>
+  </div>
+  <!-- / -->
+
+<!-- ############ LAYOUT END-->
+
+  </div>
+<!-- build:js scripts/app.html.js -->
+<!-- jQuery -->
+  <script src="../libs/jquery/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="../libs/jquery/tether/dist/js/tether.min.js"></script>
+  <script src="../libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+  <script src="../libs/jquery/underscore/underscore-min.js"></script>
+  <script src="../libs/jquery/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="../libs/jquery/PACE/pace.min.js"></script>
+
+  <script src="scripts/config.lazyload.js"></script>
+
+  <script src="scripts/palette.js"></script>
+  <script src="scripts/ui-load.js"></script>
+  <script src="scripts/ui-jp.js"></script>
+  <script src="scripts/ui-include.js"></script>
+  <script src="scripts/ui-device.js"></script>
+  <script src="scripts/ui-form.js"></script>
+  <script src="scripts/ui-nav.js"></script>
+  <script src="scripts/ui-screenfull.js"></script>
+  <script src="scripts/ui-scroll-to.js"></script>
+  <script src="scripts/ui-toggle-class.js"></script>
+
+  <script src="scripts/app.js"></script>
+
+  <!-- ajax -->
+  <script src="../libs/jquery/jquery-pjax/jquery.pjax.js"></script>
+  <script src="scripts/ajax.js"></script>
+<!-- endbuild -->
+</body>
+</html>

@@ -2,7 +2,7 @@
 /* Sample Overlay Text                               */
 /* ------------------------------------------------- */
 cast-media-player:after {
-  content: "Hey Hey";
+  content: "Hello Dani";
   position: absolute;
   left: 0;
   right: 0;
