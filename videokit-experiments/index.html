@@ -1,0 +1,18 @@
+<html>
+    <div id="video-call"></div>
+ 
+    <script src="https://videokit.io/v1/video-kit.js"></script>
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const apiKey = urlParams.get("api_key");
+      const callId = 'my-call-' + urlParams.get("call_id");
+      console.log(callId);
+         
+      VideoKit({
+        apiKey: apiKey,
+        callId: callId ,
+        container: '#video-call'
+      });
+    </script>
+</html>
