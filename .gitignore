@@ -1,3 +1,15 @@
 node_modules/
 bower_components/
 .DS_Store
+alexa-skills
+chromecast
+contentful
+keen_io
+manifest-tests
+projects
+react
+svelte
+tizen
+tracking-happiness
+video
+web-rtc
