@@ -1,1 +1,0 @@
-<h1>Metrics Screen</h1>

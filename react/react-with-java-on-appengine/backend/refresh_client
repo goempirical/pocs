@@ -1,4 +1,0 @@
-cp -R src/main/webapp/app target/m2i-service-1.0-SNAPSHOT
-#rm -rf target/m2i-service-1.0-SNAPSHOT/app/node_modules
-rm -rf target/m2i-service-1.0-SNAPSHOT/app/src
-echo "Files pushed to target, now refresh folder to see changes"

@@ -1,2 +1,0 @@
-#mvn clean install && mvn appengine:devserver
-mvn clean appengine:devserver
